@@ -83,7 +83,7 @@ export async function createMpesaPayment({ orderId, amount, phone }) {
         BusinessShortCode: shortcode,
         Password: password,
         Timestamp: timestamp,
-        TransactionType: 'CustomerPayBillOnline',
+        TransactionType: 'CustomerBuyGoodsOnline',
         Amount: Math.round(amount),
         PartyA: phoneNumber,
         PartyB: shortcode,
